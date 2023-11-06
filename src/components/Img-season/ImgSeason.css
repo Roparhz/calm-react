@@ -1,0 +1,46 @@
+.section-img-season {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  gap: 5px;
+  margin-bottom: 5rem;
+}
+
+.section-img-season .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-img-season img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.5s ease;
+}
+
+.section-img-season .season-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ou toute autre couleur qui ressort bien sur vos images */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: rgba(0, 0, 0, 0.5); /* Légère couche sombre pour mieux lire le texte */
+  font-size: 2em; /* Ajustez selon la taille nécessaire */
+  pointer-events: none; /* Pour que le texte ne bloque pas le survol sur l'image */
+}
+
+.section-img-season .img-container:hover .season-text {
+  opacity: 1;
+}
+
+.section-img-season .img-container:hover img {
+  transform: scale(1.05); /* Effet de zoom léger */
+}

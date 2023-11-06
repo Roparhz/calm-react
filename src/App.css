@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'TheSecret';
+    src: url('./fonts/TheSecret-Regular.woff') format("woff"); 
+}
+
+h1{
+    font-family: "TheSecret", cursive, sans-serif;
+    font-size: 10rem;
+}
+
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+p{
+    font-family: cursive, sans-serif;
+}
+
+
+
+

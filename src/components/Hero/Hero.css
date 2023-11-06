@@ -1,0 +1,13 @@
+.hero-section{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.hero-p{
+    font-size: 2.5rem;
+}
+
+.strong-hero{
+    font-family: "TheSecret", cursive, sans-serif;
+    font-size: 5rem;
+}

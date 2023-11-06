@@ -1,0 +1,22 @@
+.liens-section{
+    display: flex;
+    gap: 2rem;
+}
+
+.fb-icon {
+  color: #1877F2;
+  transition: color 0.5s ease;
+}
+
+.fb-icon:hover{
+    color: black;
+}
+
+.is-icon{
+    color: #C13584;
+    transition: color 0.5s ease;
+}
+
+.is-icon:hover{
+    color: black;
+}
