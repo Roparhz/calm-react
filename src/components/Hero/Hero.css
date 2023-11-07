@@ -11,3 +11,12 @@
     font-family: "TheSecret", cursive, sans-serif;
     font-size: 5rem;
 }
+
+@media (max-width: 768px) {
+    .hero-p{
+        font-size: 1.5rem;
+    }
+    .strong-hero{
+        font-size: 3rem;
+    }
+}

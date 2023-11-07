@@ -22,7 +22,11 @@
     padding: 10px 0; 
 }
 
-.side-nav a:hover {
+.side-nav a:hover, a:focus {
+    color: #367d87;
+}
+
+.side-nav a.active {
     color: #367d87;
 }
 
@@ -33,4 +37,40 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .side-nav {
+    width: 160px; 
+  }
+}
+
+.menu-btn {
+  display: none; 
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000; 
+  color: #367d87;
+  border: none;
+  background-color: transparent
+}
+
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+
+  .side-nav {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    padding-top: 5rem;
+  }
+
+  .side-nav.open {
+    transform: translateX(0);
+  }
+
 }

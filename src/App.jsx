@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "./components/SideNav/SideNav"
+import SideNav from "./components/SideNav/SideNav"
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Menu from "./components/Menu/Menu";
@@ -12,7 +12,7 @@ import "./css/reset.css";
 function App() {
   return (
     <div className="App">
-      <SideBar />
+      <SideNav />
       <div className="content">
         <div id="accueil" className="section">
           <Header />

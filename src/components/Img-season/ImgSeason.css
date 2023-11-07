@@ -29,12 +29,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Ou toute autre couleur qui ressort bien sur vos images */
+  color: white; 
   opacity: 0;
   transition: opacity 0.5s ease;
-  background: rgba(0, 0, 0, 0.5); /* Légère couche sombre pour mieux lire le texte */
-  font-size: 2em; /* Ajustez selon la taille nécessaire */
-  pointer-events: none; /* Pour que le texte ne bloque pas le survol sur l'image */
+  background: rgba(0, 0, 0, 0.5); 
+  font-size: 2em; 
+  pointer-events: none; 
 }
 
 .section-img-season .img-container:hover .season-text {
@@ -42,5 +42,23 @@
 }
 
 .section-img-season .img-container:hover img {
-  transform: scale(1.05); /* Effet de zoom léger */
+  transform: scale(1.05); 
+}
+
+@media (max-width: 1024px) {
+  .section-img-season .season-text{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-img-season{
+    grid-template-columns: 1fr;
+  }
+  .section-img-season .img-container:hover .season-text{
+    opacity: 0;
+  }
+  .section-img-season .img-container:hover img {
+    transform: none; 
+  }
 }
