@@ -75,6 +75,9 @@
   .section-img-season .img-container:hover .season-text{
     opacity: 0;
   }
+  .section-img-season .season-text{
+    opacity: 1;
+  }
   .section-img-season .img-container:hover img {
     transform: none; 
   }

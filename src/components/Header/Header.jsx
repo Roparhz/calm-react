@@ -5,10 +5,8 @@ function Header() {
   return (
     <header className="header">
       <div className="img-container">
-        <img src="/img-devanture.jpg" alt="Logo du restaurant"/>
-      </div>
-      <div className="img-container">
-        <img src="/img-local.jpg" alt="Logo du restaurant"/>
+        <img src="/img-chatgpt2.png" alt="Image d'une table avec des fruits et légumes "/>
+        <h1 className="image-overlay-title">Bienvenue chez Calm !</h1>
       </div>
       
       
