@@ -19,4 +19,8 @@
   .header {
     grid-template-columns: 1fr;
   }
+  .header img{
+    min-width: 35rem;
+    width: 100%;
+}
 }

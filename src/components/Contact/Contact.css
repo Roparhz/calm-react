@@ -7,3 +7,23 @@
     justify-content: space-around;
 }
 
+
+@media (max-width: 1024px) {
+  .contact-section{
+    flex-direction: column;
+    width: 54.3rem;
+    font-size: 2rem;
+  }
+
+.address{
+    padding-bottom: 2rem;
+}
+}
+
+@media (max-width: 768px) {
+  .contact-section{
+    flex-direction: column;
+    width: 35rem;
+    font-size: 1.5rem;
+  }
+}

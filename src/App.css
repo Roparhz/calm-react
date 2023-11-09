@@ -19,6 +19,11 @@ p{
     font-family: cursive, sans-serif;
 }
 
+@media (max-width: 768px) {
+  .content{
+    margin-left: 2rem;
+  }
+}
 
 
 

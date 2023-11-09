@@ -49,10 +49,27 @@
   .section-img-season .season-text{
     font-size: 1em;
   }
+  .section-img-season, .section-img-season .img-container, .section-img-season img {
+    max-width: 53rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-img-season {
+    grid-template-columns: 1fr;
+  }
+  .section-img-season .img-container:hover .season-text{
+    opacity: 0;
+  }
+  .section-img-season .img-container:hover img {
+    transform: none; 
+  }
 }
 
 @media (max-width: 768px) {
-  .section-img-season{
+  .section-img-season, .section-img-season .img-container, .section-img-season img {
+    min-width: 35rem;
+  }
+  .section-img-season {
     grid-template-columns: 1fr;
   }
   .section-img-season .img-container:hover .season-text{

@@ -6,3 +6,21 @@ footer{
     padding: 20px 40px;
     background-color: #f2f3f4;
 }
+
+
+@media (max-width: 1024px) {
+  footer{
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  footer{
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+  }
+}

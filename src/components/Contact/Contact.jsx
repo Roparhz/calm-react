@@ -4,7 +4,7 @@ import "./Contact.css"
 function Contact() {
   return (
     <section className="contact-section">
-      <div>
+      <div className="address">
         <h2>Coordonnées</h2>
         <p>
           <strong>Adresse :</strong> 81 Rue Nationale, 37250, Sorigny
