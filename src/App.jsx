@@ -12,15 +12,12 @@ import "./css/reset.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
+  
   useEffect(() => {
-    const handleLoad = () => {
+    
+    setTimeout(() => {
       setIsLoading(false);
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => window.removeEventListener("load", handleLoad);
+    }, 1000); 
   }, []);
 
   if (isLoading) {
