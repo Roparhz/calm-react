@@ -70,3 +70,9 @@
 .lettre:nth-child(10){
     animation-delay: 1s;
 }
+
+@media (max-width: 768px) {
+    .lettre{
+        font-size: 25px;
+    }
+}
