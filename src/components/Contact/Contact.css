@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
   .contact-section{
     flex-direction: column;
-    width: 35rem;
+    width: 31rem;
     font-size: 1.5rem;
   }
 }

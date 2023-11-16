@@ -66,9 +66,6 @@
 }
 
 @media (max-width: 768px) {
-  .section-img-season, .section-img-season .img-container, .section-img-season img {
-    min-width: 35rem;
-  }
   .section-img-season {
     grid-template-columns: 1fr;
   }
