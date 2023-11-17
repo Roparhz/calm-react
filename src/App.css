@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'TheSecret';
     src: url('./fonts/TheSecret-Regular.woff') format("woff"); 
+    font-display: swap;
 }
 
 h1{

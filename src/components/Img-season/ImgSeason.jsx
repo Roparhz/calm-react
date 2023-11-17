@@ -12,7 +12,12 @@ function ImgSeason (){
             rel="noopener noreferrer"
           >
             <picture>
-              <source media="(min-width: 1025px)" srcSet="img/printemps.webp" />
+              <source
+                media="(min-width: 1025px)"
+                srcSet="img/printemps.webp"
+                width="800"
+                height="600"
+              />
               <source srcSet="img/printemps-mini.webp" />
               <img src="img/printemps-mini.webp" alt="Asperge mimosa" />
             </picture>
@@ -28,7 +33,12 @@ function ImgSeason (){
             rel="noopener noreferrer"
           >
             <picture>
-              <source media="(min-width: 1025px)" srcSet="img/ete.webp" />
+              <source
+                media="(min-width: 1025px)"
+                srcSet="img/ete.webp"
+                width="800"
+                height="600"
+              />
               <source srcSet="img/ete-mini.webp" />
               <img src="img/ete-mini.webp" alt="Nectarine au miel" />
             </picture>
@@ -46,7 +56,12 @@ function ImgSeason (){
             <picture>
               <source media="(min-width: 1025px)" srcSet="img/automne.webp" />
               <source srcSet="img/automne-mini.webp" />
-              <img src="img/automne-mini.webp" alt="Soupe de butternut" />
+              <img
+                src="img/automne-mini.webp"
+                alt="Soupe de butternut"
+                width="800"
+                height="600"
+              />
             </picture>
             <div className="season-text">
               Automne : <br /> Soupe de butternut
@@ -65,6 +80,8 @@ function ImgSeason (){
               <img
                 src="img/hiver-mini.webp"
                 alt="Poulet à l'ail et au parmesan"
+                width="800"
+                height="600"
               />
             </picture>
             <div className="season-text">
