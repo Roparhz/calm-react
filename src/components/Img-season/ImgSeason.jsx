@@ -11,10 +11,13 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/printemps.png" alt="Asperge mimosa" />
+            <picture>
+              <source media="(min-width: 1025px)" srcSet="img/printemps.webp" />
+              <source srcSet="img/printemps-mini.webp" />
+              <img src="img/printemps-mini.webp" alt="Asperge mimosa" />
+            </picture>
             <div className="season-text">
-              Printemps : <br />
-              Asperge mimosa
+              Printemps : <br /> Asperge mimosa
             </div>
           </a>
         </div>
@@ -24,10 +27,13 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/ete.png" alt="Nectarine au miel" />
+            <picture>
+              <source media="(min-width: 1025px)" srcSet="img/ete.webp" />
+              <source srcSet="img/ete-mini.webp" />
+              <img src="img/ete-mini.webp" alt="Nectarine au miel" />
+            </picture>
             <div className="season-text">
-              Été : <br />
-              Nectarine au miel
+              Été : <br /> Nectarine au miel
             </div>
           </a>
         </div>
@@ -37,10 +43,13 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/automne.png" alt="Soupe de butternut" />
+            <picture>
+              <source media="(min-width: 1025px)" srcSet="img/automne.webp" />
+              <source srcSet="img/automne-mini.webp" />
+              <img src="img/automne-mini.webp" alt="Soupe de butternut" />
+            </picture>
             <div className="season-text">
-              Automne : <br />
-              Soupe de butternut
+              Automne : <br /> Soupe de butternut
             </div>
           </a>
         </div>
@@ -50,11 +59,16 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/hiver.png" alt="Poulet à l'ail et au parmesan" />
+            <picture>
+              <source media="(min-width: 1025px)" srcSet="img/hiver.webp" />
+              <source srcSet="img/hiver-mini.webp" />
+              <img
+                src="img/hiver-mini.webp"
+                alt="Poulet à l'ail et au parmesan"
+              />
+            </picture>
             <div className="season-text">
-              Hiver : <br />
-              Poulet à l'ail <br />
-              et au parmesan
+              Hiver : <br /> Poulet à l'ail <br /> et au parmesan
             </div>
           </a>
         </div>

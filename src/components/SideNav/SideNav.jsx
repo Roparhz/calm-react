@@ -42,7 +42,7 @@ function SideNav() {
         
       </button>
       <div className={`side-nav ${isNavOpen ? "open" : ""}`}>
-        <img src="img/Logo CALM.jpg" alt="Logo du restaurant" className="logo-side-nav" />
+        <img src="img/Logo CALM.webp" alt="Logo du restaurant" className="logo-side-nav" />
         <a href="#accueil" className={activeSection === 'accueil' ? 'active' : ''} onClick={toggleNav}>Accueil</a>
         <a href="#menu" className={activeSection === 'menu' ? 'active' : ''} onClick={toggleNav}>Menu</a>
         <a href="#img-season" className={activeSection === 'img-season' ? 'active' : ''} onClick={toggleNav}>Les 4 saisons</a>
