@@ -11,7 +11,7 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/printemps.png" alt="Asperge mimosa" />
+            <img src="img/printemps.png" alt="Asperge mimosa" />
             <div className="season-text">
               Printemps : <br />
               Asperge mimosa
@@ -24,7 +24,7 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/ete.png" alt="Nectarine au miel" />
+            <img src="img/ete.png" alt="Nectarine au miel" />
             <div className="season-text">
               Été : <br />
               Nectarine au miel
@@ -37,7 +37,7 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/automne.png" alt="Soupe de butternut" />
+            <img src="img/automne.png" alt="Soupe de butternut" />
             <div className="season-text">
               Automne : <br />
               Soupe de butternut
@@ -50,7 +50,7 @@ function ImgSeason (){
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/hiver.png" alt="Poulet à l'ail et au parmesan" />
+            <img src="img/hiver.png" alt="Poulet à l'ail et au parmesan" />
             <div className="season-text">
               Hiver : <br />
               Poulet à l'ail <br />
