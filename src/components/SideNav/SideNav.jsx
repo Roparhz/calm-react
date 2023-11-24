@@ -33,20 +33,58 @@ function SideNav() {
   };
   
   return (
-     <>
-      <button className={`menu-btn ${isNavOpen ? "open" : ""}`} onClick={toggleNav}>
-        {isNavOpen
-          ? <FontAwesomeIcon icon={faTimes} />
-          : <FontAwesomeIcon icon={faBars} />
-        }
-        
+    <>
+      <button
+        className={`menu-btn ${isNavOpen ? "open" : ""}`}
+        onClick={toggleNav}
+      >
+        {isNavOpen ? (
+          <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
       </button>
       <div className={`side-nav ${isNavOpen ? "open" : ""}`}>
-        <img src="img/Logo CALM.webp" alt="Logo du restaurant" className="logo-side-nav" />
-        <a href="#accueil" className={activeSection === 'accueil' ? 'active' : ''} onClick={toggleNav}>Accueil</a>
-        <a href="#menu" className={activeSection === 'menu' ? 'active' : ''} onClick={toggleNav}>Menu</a>
-        <a href="#img-season" className={activeSection === 'img-season' ? 'active' : ''} onClick={toggleNav}>Les 4 saisons</a>
-        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={toggleNav}>Contact</a>
+        <img
+          src="img/Logo CALM.webp"
+          alt="Logo du restaurant"
+          className="logo-side-nav"
+        />
+        <a
+          href="#accueil"
+          className={activeSection === "accueil" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Accueil
+        </a>
+        <a
+          href="#menu"
+          className={activeSection === "menu" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Menu
+        </a>
+        <a
+          href="#img-season"
+          className={activeSection === "img-season" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Les 4 saisons
+        </a>
+        <a
+          href="#appetizer"
+          className={activeSection === "appetizer" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Les hors d'oeuvres
+        </a>
+        <a
+          href="#contact"
+          className={activeSection === "contact" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Contact
+        </a>
       </div>
     </>
   );

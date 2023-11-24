@@ -10,7 +10,7 @@ function Header() {
             media="(max-width: 600px)"
             srcset="img/img-chatgpt2-mini.webp"
           />
-          <source srcset="img/img-chatgpt2.webp" />
+          <source srcSet="img/img-chatgpt2.webp" />
           <img
             src="img/img-chatgpt2.webp"
             alt="Image d'une table avec des fruits et légumes"

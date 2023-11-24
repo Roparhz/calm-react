@@ -1,0 +1,119 @@
+.appetizer-section .slider {
+  position: relative;
+  width: 400px; 
+  height: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.appetizer-section .slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.9s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+.appetizer-section button {
+  /* position: absolute; */
+  margin-left: 1rem;
+
+  transform: translateY(-50%);
+  
+  /* Stylez vos boutons comme vous le souhaitez */
+}
+
+.appetizer-section button:nth-child(2) {
+  right: 35%;
+}
+
+.appetizer-section button:nth-child(3) {
+  left: 45%;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -1.5rem;
+}
+
+.icon-btn{
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  color: #367d87;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-btn:hover, .icon-btn:focus {
+  color: #ffffff; 
+  background-color: #367d87; 
+  outline: none;
+}
+
+.icon-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+/* .slider-1{
+  max-width: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.slider-1 .slider{
+  display: flex;
+  animation: slider-show 20s infinite ease-out; 
+}
+
+.slider-1 img{
+  flex-shrink: 0; 
+  width: 100%;
+} */
+
+@keyframes slider-show{
+  0%,
+  10%{
+    transform: translateX(0%);
+  }
+  12.5%,
+  22.5%{
+    transform: translateX(-100%);
+  }
+  25%,
+  35%{
+    transform: translateX(-200%);
+  }
+  37.5%,
+  47.5%{
+    transform: translateX(-300%);
+  }
+  50%,
+  60%{
+    transform: translateX(-400%);
+  }
+  62.5%,
+  72.5%{
+    transform: translateX(-500%);
+  }
+  75%,
+  85%{
+    transform: translateX(-600%);
+  }
+  87.5%,
+  97.5%{
+    transform: translateX(-700%);
+  }
+  100%{
+    transform: translateX(-500%);
+  }
+}

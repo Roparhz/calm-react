@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Menu from "./components/Menu/Menu";
 import ImgSeason from "./components/Img-season/ImgSeason";
+import Appetizer from "./components/Appetizer/Appetizer";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 import "./App.css";
@@ -37,6 +38,9 @@ function App() {
         </div>
         <div id="img-season">
           <ImgSeason />
+        </div>
+        <div id="appetizer">
+          <Appetizer />
         </div>
         <div id="contact">
           <Footer />

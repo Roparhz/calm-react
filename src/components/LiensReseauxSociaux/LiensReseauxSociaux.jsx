@@ -15,7 +15,7 @@ function LiensReseauxSociaux() {
       </div>
       <div>
         <a href="https://www.instagram.com/calm.resto/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="is-icon">
-          <FontAwesomeIcon icon={faInstagram} size="3x " />
+          <FontAwesomeIcon icon={faInstagram} size="3x" />
         </a>
       </div>
     </section>
