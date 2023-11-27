@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./appetizer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,16 +8,26 @@ import {
 
 function Appetizer(){
   const images = [
-  "appetizers-img/traiteur-1.webp",
-  "appetizers-img/traiteur-2.webp",
-  "appetizers-img/traiteur-3.webp",
-  "appetizers-img/traiteur-4.webp",
-  "appetizers-img/traiteur-5.webp",
-  "appetizers-img/traiteur-6.webp",
-  "appetizers-img/traiteur-7.webp",
-  "appetizers-img/traiteur-8.webp",
+  { src: "appetizers-img/traiteur-1.webp", srcMini: "appetizers-img/traiteur-1-mini.webp" },
+  { src: "appetizers-img/traiteur-2.webp", srcMini: "appetizers-img/traiteur-2-mini.webp" },
+  { src: "appetizers-img/traiteur-3.webp", srcMini: "appetizers-img/traiteur-3-mini.webp" },
+  { src: "appetizers-img/traiteur-4.webp", srcMini: "appetizers-img/traiteur-4-mini.webp" },
+  { src: "appetizers-img/traiteur-5.webp", srcMini: "appetizers-img/traiteur-5-mini.webp" },
+  { src: "appetizers-img/traiteur-6.webp", srcMini: "appetizers-img/traiteur-6-mini.webp" },
+  { src: "appetizers-img/traiteur-7.webp", srcMini: "appetizers-img/traiteur-7-mini.webp" },
+  { src: "appetizers-img/traiteur-8.webp", srcMini: "appetizers-img/traiteur-8-mini.webp" },
 ];
     const [current, setCurrent] = useState(0);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const nextSlide = () => {
       setCurrent(current === images.length - 1 ? 0 : current + 1);
@@ -28,28 +38,44 @@ function Appetizer(){
     };
 
 
+
     return (
       <section className="appetizer-section slider-1">
         <div className="slider">
-          {images.map((src, index) => (
-            <img
+          {images.map((image, index) => (
+            <picture
               key={index}
-              src={src}
-              alt={`Traiteur ${index + 1}`}
-              width="400"
-              height="600"
-              style={{ display: index === current ? "block" : "none" }}
-            />
+              style={{ display: isMobile || index === current ? "block" : "none" }}
+            >
+              <source media="(min-width: 769px)" srcSet={image.src} />
+              <source media="(max-width: 768px)" srcSet={image.srcMini} />
+              <img
+                src={image.src}
+                alt="Divers petits fours"
+                width="400"
+                height="600"
+              />
+            </picture>
           ))}
         </div>
-        <div className="btn">
+        {!isMobile && (
+          <div className="btn">
+            <button onClick={prevSlide} className="icon-btn">
+              <FontAwesomeIcon icon={faArrowLeftLong} size="2xl" />
+            </button>
+            <button onClick={nextSlide} className="icon-btn">
+              <FontAwesomeIcon icon={faArrowRightLong} size="2xl" />
+            </button>
+          </div>
+        )}
+        {/* <div className="btn">
           <button onClick={prevSlide} className="icon-btn">
             <FontAwesomeIcon icon={faArrowLeftLong} size="2xl" />
           </button>
           <button onClick={nextSlide} className="icon-btn">
             <FontAwesomeIcon icon={faArrowRightLong} size="2xl" />
           </button>
-        </div>
+        </div> */}
       </section>
     );
 }

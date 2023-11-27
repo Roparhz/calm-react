@@ -8,7 +8,7 @@ function Header() {
         <picture>
           <source
             media="(max-width: 600px)"
-            srcset="img/img-chatgpt2-mini.webp"
+            srcSet="img/img-chatgpt2-mini.webp"
           />
           <source srcSet="img/img-chatgpt2.webp" />
           <img
