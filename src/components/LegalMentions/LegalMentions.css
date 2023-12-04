@@ -1,0 +1,54 @@
+h1, h2, .btn-mention{
+    font-family: cursive, sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.container{
+    margin: 5% 10%;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+.legal-mentions{
+    background-color: #f1f1f1;
+}
+
+.btn-mention{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transition: color 0.2s ease;
+}
+
+.btn-mention:hover,
+.btn-mention:focus{
+    color: #367d87;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 5% 5%; 
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .btn-mention {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+}

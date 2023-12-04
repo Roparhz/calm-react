@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./SideNav.css"
@@ -31,22 +32,56 @@ function SideNav() {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  
+
   return (
-     <>
-      <button className={`menu-btn ${isNavOpen ? "open" : ""}`} onClick={toggleNav}>
-        {isNavOpen
-          ? <FontAwesomeIcon icon={faTimes} />
-          : <FontAwesomeIcon icon={faBars} />
-        }
-        
+    <>
+      <button
+        className={`menu-btn ${isNavOpen ? "open" : ""}`}
+        onClick={toggleNav}
+      >
+        {isNavOpen ? (
+          <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
       </button>
       <div className={`side-nav ${isNavOpen ? "open" : ""}`}>
-        <img src="img/Logo CALM.webp" alt="Logo du restaurant" className="logo-side-nav" />
-        <a href="#accueil" className={activeSection === 'accueil' ? 'active' : ''} onClick={toggleNav}>Accueil</a>
-        <a href="#menu" className={activeSection === 'menu' ? 'active' : ''} onClick={toggleNav}>Menu</a>
-        <a href="#img-season" className={activeSection === 'img-season' ? 'active' : ''} onClick={toggleNav}>Les 4 saisons</a>
-        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={toggleNav}>Contact</a>
+        <Link to="/" onClick={() => setIsNavOpen(false)}>
+          <img
+            src="img/Logo CALM.webp"
+            alt="Logo du restaurant"
+            className="logo-side-nav"
+          />
+        </Link>
+        <a
+          href="#accueil"
+          className={activeSection === "accueil" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Accueil
+        </a>
+        <a
+          href="#menu"
+          className={activeSection === "menu" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Menu
+        </a>
+        <a
+          href="#img-season"
+          className={activeSection === "img-season" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Les 4 saisons
+        </a>
+        <a
+          href="#contact"
+          className={activeSection === "contact" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Contact
+        </a>
+        <Link to="/mentions-legales">Mentions Légales</Link>
       </div>
     </>
   );
