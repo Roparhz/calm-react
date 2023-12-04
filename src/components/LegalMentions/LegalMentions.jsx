@@ -7,7 +7,7 @@ function LegalMentions() {
 
   return (
     <div className="legal-mentions">
-      <h1>Mentions Légales</h1>
+      <h1 className="h1-mention">Mentions Légales</h1>
       <div className="container">
         <h2>Responsable de publication</h2>
         <p>Amélie Levêque</p>
