@@ -8,6 +8,7 @@ import ImgSeason from "./components/Img-season/ImgSeason";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 import LegalMentions from "./components/LegalMentions/LegalMentions";
+import PrivacyPolicy from "./components/Privacypolicy/PrivacyPolicy";
 import "./App.css";
 import "./css/helpers.css";
 import "./css/reset.css";
@@ -53,6 +54,7 @@ function App() {
               }
             />
             <Route path="/mentions-legales" element={<LegalMentions />} />
+            <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
           </Routes>
         </div>
       </div>
