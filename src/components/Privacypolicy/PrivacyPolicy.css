@@ -4,9 +4,18 @@
   min-height: 100vh;
 }
 
+.container{
+    margin: 5% 10%;
+}
+
+.h1-politique{
+  display: flex;
+  justify-content: center;
+}
+
 .privacy-policy h1,
 .privacy-policy h2 {
-  font-family: 'Cursive', sans-serif;
+  font-family: Cursive, sans-serif;
 }
 
 .privacy-policy p {
