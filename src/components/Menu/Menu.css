@@ -8,9 +8,14 @@
     border-radius: 5px;
 }
 
+.h2-menu{
+  color: #367d87;
+  font-size: 5rem;
+}
+
 .section-menu img{
-  /* width: 55.5rem; */
-  /* height: 86.4rem; */
+  width: 55.5rem;
+  height: 86.4rem;
 }
 
 .section-menu{
@@ -24,4 +29,7 @@
     width: auto;
     height: auto;
   }
+  .h2-menu{
+  font-size: 2rem;
+}
 }
