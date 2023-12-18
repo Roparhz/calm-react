@@ -81,7 +81,7 @@ function PrivacyPolicy() {
       <h2>Nous contacter</h2>
       <p>
         Si vous avez des questions sur cette politique de confidentialité,
-        veuillez nous contacter.
+        veuillez nous contacter. 
       </p>
 
       <button onClick={() => navigate(-1)}>Retour</button>
