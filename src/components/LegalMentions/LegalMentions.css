@@ -27,6 +27,11 @@ p{
 .btn-mention{
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #367d87;
+    color: #367d87;
+    cursor: pointer;
     transition: color 0.2s ease;
 }
 

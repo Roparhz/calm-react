@@ -82,6 +82,7 @@ function SideNav() {
           Contact
         </a>
         <Link to="/mentions-legales">Mentions Légales</Link>
+        <Link to="/politique-de-confidentialite">Politique de confidentialité</Link>
       </div>
     </>
   );
