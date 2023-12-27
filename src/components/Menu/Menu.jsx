@@ -3,12 +3,11 @@ import  "./Menu.css"
 function Menu(){
     return (
       <section className="section-menu">
-        <h2 className="h2-menu">"Semaine de l'avent"</h2>
-        {/* <p>
-          les plats que vous avez le plus apprécié durant cette saison regroupé
-          en un seul menu !
-        </p> */}
-        <picture>
+        <h2 className="h2-menu">Fermeture hivernale</h2>
+        <p>
+          Retour le mercredi 3 pour une nouvelle année !
+        </p>
+        {/* <picture>
           <source media="(min-width: 1025px)" srcset="img/menu-18-12-23.webp" />
           <source srcset="img/menu-18-12-23-mini.webp" />
           <img
@@ -18,7 +17,7 @@ function Menu(){
             width="800"
             height="600"
           />
-        </picture>
+        </picture> */}
       </section>
     );
 
