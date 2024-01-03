@@ -13,6 +13,10 @@
   font-size: 5rem;
 }
 
+.p-menu{
+  font-size: 2rem;
+}
+
 .section-menu img{
   width: 55.5rem;
   height: 86.4rem;
@@ -31,6 +35,9 @@
     height: auto;
   }
   .h2-menu{
-  font-size: 2rem;
-}
+    font-size: 2rem;
+  }
+  .p-menu{
+    font-style: 1rem;
+  }
 }
