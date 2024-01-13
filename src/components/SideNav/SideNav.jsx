@@ -61,6 +61,13 @@ function SideNav() {
           Accueil
         </a>
         <a
+          href="#promotion"
+          className={activeSection === "promotion" ? "active" : ""}
+          onClick={toggleNav}
+        >
+          Offre du moment
+        </a>
+        <a
           href="#menu"
           className={activeSection === "menu" ? "active" : ""}
           onClick={toggleNav}
@@ -82,7 +89,9 @@ function SideNav() {
           Contact
         </a>
         <Link to="/mentions-legales">Mentions Légales</Link>
-        <Link to="/politique-de-confidentialite">Politique de confidentialité</Link>
+        <Link to="/politique-de-confidentialite">
+          Politique de confidentialité
+        </Link>
       </div>
     </>
   );
