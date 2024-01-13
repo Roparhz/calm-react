@@ -1,0 +1,43 @@
+.promotion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.h2-promotion{
+  color: #367d87;
+  font-size: 5rem;
+}
+
+.p-promotion{
+  font-size: 2rem;
+}
+
+.section-promotion img{
+  width: 75.5rem;
+  height: 86.4rem;
+}
+
+.section-promotion{
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+
+@media (max-width: 768px) {
+  .section-promotion img{
+    width: auto;
+    height: auto;
+  }
+  .h2-promotion{
+    font-size: 2rem;
+  }
+  .p-promotion{
+    font-style: 1rem;
+  }
+}

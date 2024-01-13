@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SideNav from "./components/SideNav/SideNav"
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Promotion from "./components/Promotion/Promotion";
 import Menu from "./components/Menu/Menu";
 import ImgSeason from "./components/Img-season/ImgSeason";
 import Footer from "./components/Footer/Footer";
@@ -40,6 +41,9 @@ function App() {
                   <div id="accueil" className="section">
                     <Header />
                     <Hero />
+                  </div>
+                  <div id="promotion">
+                    <Promotion /> 
                   </div>
                   <div id="menu">
                     <Menu />
