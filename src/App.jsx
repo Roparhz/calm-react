@@ -42,9 +42,9 @@ function App() {
                     <Header />
                     <Hero />
                   </div>
-                  <div id="promotion">
+                  {/* <div id="promotion">
                     <Promotion /> 
-                  </div>
+                  </div> */}
                   <div id="menu">
                     <Menu />
                   </div>
