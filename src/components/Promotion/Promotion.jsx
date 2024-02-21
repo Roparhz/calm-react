@@ -4,13 +4,13 @@ function Promotion() {
   return (
     <section className="section-promotion">
       <h2 className="h2-promotion">
-        CALM vous propose un plat de la St Valentin sur commande uniquement !
+        CALM vous propose un plat sur commande uniquement !
       </h2>
       <picture>
-        <source media="(min-width: 1025px)" srcset="img-promotion/menu-st-valentin.webp" />
-        <source srcset="img-promotion/menu-st-valentin-mini.webp" />
+        <source media="(min-width: 1025px)" srcset="img-promotion/promotion-01-03-24.webp" />
+        <source srcset="img-promotion/promotion-01-03-24-mini.webp" />
         <img
-          src="img-promotion/menu-st-valentin.webp"
+          src="img-promotion/promotion-01-03-24.webp"
           alt="Menu de la St Valentin"
           className="promotion"
           width="800"
