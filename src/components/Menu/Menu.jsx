@@ -3,7 +3,7 @@ import  "./Menu.css"
 function Menu(){
     return (
       <section className="section-menu">
-        <p className="p-menu">Menu de la semaine du 18 mars</p>
+        <p className="p-menu">Menu de la semaine du 18 au 22 mars</p>
         <picture>
           <source media="(min-width: 1025px)" srcset="img/menu-18-03-24.webp" />
           <source srcset="img/menu-18-03-24-mini.webp" />

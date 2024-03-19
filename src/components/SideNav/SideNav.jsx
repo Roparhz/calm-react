@@ -60,13 +60,13 @@ function SideNav() {
         >
           Accueil
         </a>
-        {/* <a
+        <a
           href="#promotion"
           className={activeSection === "promotion" ? "active" : ""}
           onClick={toggleNav}
         >
           Offre du moment
-        </a> */}
+        </a>
         <a
           href="#menu"
           className={activeSection === "menu" ? "active" : ""}
