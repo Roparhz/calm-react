@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 import LegalMentions from "./components/LegalMentions/LegalMentions";
 import PrivacyPolicy from "./components/Privacypolicy/PrivacyPolicy";
+import LoginPage from "./components/LoginPage/LoginPage";
 import "./App.css";
 import "./css/helpers.css";
 import "./css/reset.css";
@@ -42,9 +43,9 @@ function App() {
                     <Header />
                     <Hero />
                   </div>
-                  <div id="promotion">
+                  {/* <div id="promotion">
                     <Promotion /> 
-                  </div>
+                  </div> */}
                   <div id="menu">
                     <Menu />
                   </div>
@@ -59,6 +60,7 @@ function App() {
             />
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
+            <Route path="/login" element={<LoginPage />} />
           </Routes>
         </div>
       </div>
