@@ -9,12 +9,19 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/login", {
-        email,
-        password,
-      });
+      const response = await axios
+        .post("http://localhost:8080/api/login", {
+          email,
+          password,
+        })
+        .then(function (response) {
+          const localStorage = window.localStorage;
+          localStorage.setItem("token", response.headers.getAuthorization());
+        });
       if (response.status === 200) {
-        window.location.href = "/";
+        setError("yolo")
+        // console.log(response, "pause");
+        window.location.href = "/admin";
       } else {
         setError("Adresse e-mail ou mot de passe incorrect");
       }
