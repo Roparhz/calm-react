@@ -7,6 +7,7 @@ import "./SideNav.css"
 function SideNav() {
   const [activeSection, setActiveSection] = useState("");
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,11 @@ function SideNav() {
 
     window.addEventListener("scroll", handleScroll);
 
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsLoggedIn(true);
+    }
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -31,6 +37,13 @@ function SideNav() {
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setIsLoggedIn(false);
+    setActiveSection(null);
+    window.location.href = "/";
   };
 
   return (
@@ -60,13 +73,13 @@ function SideNav() {
         >
           Accueil
         </a>
-        {/* <a
+        <a
           href="#promotion"
           className={activeSection === "promotion" ? "active" : ""}
           onClick={toggleNav}
         >
           Offre du moment
-        </a> */}
+        </a>
         <a
           href="#menu"
           className={activeSection === "menu" ? "active" : ""}
@@ -92,9 +105,13 @@ function SideNav() {
         <Link to="/politique-de-confidentialite">
           Politique de confidentialité
         </Link>
-        <Link to="/login" onClick={() => setIsNavOpen(false)}>
-          Connexion admin
-        </Link>
+        {isLoggedIn ? (
+          <button onClick={handleLogout}>Déconnexion</button>
+        ) : (
+          <Link to="/login" onClick={() => setIsNavOpen(false)}>
+            Connexion admin
+          </Link>
+        )}
       </div>
     </>
   );

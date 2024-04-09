@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideNav from "./components/SideNav/SideNav"
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -11,13 +11,15 @@ import Loader from "./components/Loader/Loader";
 import LegalMentions from "./components/LegalMentions/LegalMentions";
 import PrivacyPolicy from "./components/Privacypolicy/PrivacyPolicy";
 import LoginPage from "./components/LoginPage/LoginPage";
-import Admin from "./components/admin/Admin";
+import Admin from "./components/Admin/AdminPage";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import "./App.css";
 import "./css/helpers.css";
 import "./css/reset.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   useEffect(() => {
     
@@ -60,7 +62,10 @@ function App() {
               }
             />
             <Route path="/mentions-legales" element={<LegalMentions />} />
-            <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
+            <Route
+              path="/politique-de-confidentialite"
+              element={<PrivacyPolicy />}
+            />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>

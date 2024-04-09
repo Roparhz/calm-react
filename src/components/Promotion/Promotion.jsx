@@ -7,8 +7,8 @@ function Promotion() {
         CALM vous propose un plat sur commande uniquement !
       </h2>
       <picture>
-        <source media="(min-width: 1025px)" srcset="img-promotion/promotion-30-03-24.webp" />
-        <source srcset="img-promotion/promotion-30-03-24-mini.webp" />
+        <source media="(min-width: 1025px)" srcSet="img-promotion/promotion-30-03-24.webp" />
+        <source srcSet="img-promotion/promotion-30-03-24-mini.webp" />
         <img
           src="img-promotion/promotion-30-03-24.webp"
           alt="Menu de Paques"
