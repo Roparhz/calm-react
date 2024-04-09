@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 
 function Header() {
   return (
@@ -8,13 +8,13 @@ function Header() {
         <picture>
           <source
             media="(max-width: 600px)"
-            srcset="img/img-chatgpt2-mini.webp"
+            srcSet="img/img-chatgpt2-mini.webp"
           />
-          <source srcset="img/img-chatgpt2.webp" />
+          <source srcSet="img/img-chatgpt2.webp" />
           <img
             src="img/img-chatgpt2.webp"
             alt="Image d'une table avec des fruits et légumes"
-            width="800" 
+            width="800"
             height="600"
           />
         </picture>
@@ -23,6 +23,5 @@ function Header() {
     </header>
   );
 }
-
 
 export default Header;
