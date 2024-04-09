@@ -11,6 +11,7 @@ import Loader from "./components/Loader/Loader";
 import LegalMentions from "./components/LegalMentions/LegalMentions";
 import PrivacyPolicy from "./components/Privacypolicy/PrivacyPolicy";
 import LoginPage from "./components/LoginPage/LoginPage";
+import Admin from "./components/admin/Admin";
 import "./App.css";
 import "./css/helpers.css";
 import "./css/reset.css";
@@ -61,6 +62,7 @@ function App() {
             <Route path="/mentions-legales" element={<LegalMentions />} />
             <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </div>
       </div>

@@ -92,6 +92,9 @@ function SideNav() {
         <Link to="/politique-de-confidentialite">
           Politique de confidentialité
         </Link>
+        <Link to="/login" onClick={() => setIsNavOpen(false)}>
+          Connexion admin
+        </Link>
       </div>
     </>
   );
