@@ -73,13 +73,13 @@ function SideNav() {
         >
           Accueil
         </a>
-        <a
+        {/* <a
           href="#promotion"
           className={activeSection === "promotion" ? "active" : ""}
           onClick={toggleNav}
         >
           Offre du moment
-        </a>
+        </a> */}
         <a
           href="#menu"
           className={activeSection === "menu" ? "active" : ""}
@@ -105,13 +105,13 @@ function SideNav() {
         <Link to="/politique-de-confidentialite">
           Politique de confidentialité
         </Link>
-        {isLoggedIn ? (
+        {/* {isLoggedIn ? (
           <button onClick={handleLogout}>Déconnexion</button>
         ) : (
           <Link to="/login" onClick={() => setIsNavOpen(false)}>
             Connexion admin
           </Link>
-        )}
+        )} */}
       </div>
     </>
   );
