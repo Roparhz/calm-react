@@ -3,13 +3,15 @@ import  "./Menu.css"
 function Menu(){
     return (
       <section className="section-menu">
-        <p className="p-menu">Menu de la semaine du 15 au 19 avril</p>
+        <p className="p-menu">****<br></br>CALM vous souhaite une très bonne année 2025 !<br></br>****</p>
+        <p className="p-menu">Menu de la semaine du 6 Janvier</p>
         <picture>
-          <source media="(min-width: 1025px)" srcSet="img/menu-15-04-24.webp" />
-          <source srcSet="img/menu-15-04-24-mini.webp" />
+          <source media="(min-width: 1025px)" srcSet="img/menu-06-01-25.webp" />
+          <source srcSet="img/menu-06-01-25-mini.webp" />
+          <source srcSet="img/congès-mini.webp" />
           <img
-            src="img/menu-15-04-24-mini.webp"
-            alt="Menu de la semaine du 15 avril 2024"
+            src="img/menu-06-01-25-mini.webp"
+            alt="Menu de la semaine du 6 janvier 2025"
             className="menu"
             width="800"
             height="600"
@@ -17,7 +19,6 @@ function Menu(){
         </picture>
       </section>
     );
-
 }
 
 export default Menu;
