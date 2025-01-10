@@ -1,0 +1,104 @@
+.h2-box{
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 20px;
+  color: #367d87;
+}
+
+/* Titre des box */
+.title-box {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* Container du carrousel */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 20px auto auto 460px;
+  max-width: 1200px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+
+/* Légende */
+.carousel-legend {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Boutons de navigation */
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.static-text {
+  max-width: 300px;
+}
+
+.static-text h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.static-text p {
+  font-size: 2rem;
+  color: #666;
+  line-height: 1.5;
+}
