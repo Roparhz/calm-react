@@ -1,11 +1,10 @@
-.h2-box{
+.h2-box {
   text-align: center;
   font-size: 4rem;
   margin-top: 20px;
   color: #367d87;
 }
 
-/* Titre des box */
 .title-box {
   font-weight: bold;
   margin-top: 20px;
@@ -13,12 +12,11 @@
   text-align: center;
 }
 
-/* Container du carrousel */
 .carousel-wrapper {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin: 20px auto auto 460px;
+  margin: 20px auto auto ;
   max-width: 1200px;
 }
 
@@ -51,15 +49,15 @@
   position: relative;
 }
 
-/* Légende */
-.carousel-legend {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 10px;
-  color: #333;
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Boutons de navigation */
+
 .btn-prev,
 .btn-next {
   position: absolute;
@@ -101,4 +99,70 @@
   font-size: 2rem;
   color: #666;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .h2-box{
+        font-size: 1.5rem;
+    }
+    .title-box{
+        font-size: 1.5rem;
+    }
+    .carousel-wrapper{
+        margin: 20px auto auto 0;
+        gap: 20px;
+    }
+    .carousel{
+        max-width: 300px;
+    }
+    .carousel-content{
+        margin: 20px auto;
+        width: 25rem;
+    }
+    .carousel-slide img{
+        border-radius: 5px;
+    }
+    .static-text p{
+        font-size: 0.7rem;
+    }
+    .btn-prev,
+    .btn-next{
+        font-size: 1rem;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        list-style: none;
+    }    
+}
+
+@media (max-width: 1024px) {
+    .carousel-wrapper{
+        margin: 20px auto auto 0;
+        gap: 20px;
+    }
+    .carousel{
+        max-width: 300px;
+    }
+    .carousel-content{
+        margin: 20px auto;
+        width: 25rem;
+    }
+    .carousel-slide img{
+        border-radius: 5px;
+    }
+    .static-text p{
+        font-size: 1.7rem;
+    }
+    .btn-prev,
+    .btn-next{
+        font-size: 1rem;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        list-style: none;
+    }    
 }

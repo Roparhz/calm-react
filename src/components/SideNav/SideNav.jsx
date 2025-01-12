@@ -11,7 +11,7 @@ function SideNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["accueil", "menu", "img-season", "contact"];
+      const sections = ["accueil", "menu", "img-season", "contact", 'traiteur'];  
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -80,6 +80,29 @@ function SideNav() {
         >
           Offre du moment
         </a> */}
+        <a
+          href="#traiteur"
+          onClick={toggleNav}
+          className={activeSection === "traiteur" ? "active" : ""}
+        >
+          <button class="uiverse">
+            <div class="wrapper">
+              <span>NOUVEAU</span>
+              <div class="circle circle-12"></div>
+              <div class="circle circle-11"></div>
+              <div class="circle circle-10"></div>
+              <div class="circle circle-9"></div>
+              <div class="circle circle-8"></div>
+              <div class="circle circle-7"></div>
+              <div class="circle circle-6"></div>
+              <div class="circle circle-5"></div>
+              <div class="circle circle-4"></div>
+              <div class="circle circle-3"></div>
+              <div class="circle circle-2"></div>
+              <div class="circle circle-1"></div>
+            </div>
+          </button>
+        </a>
         <a
           href="#menu"
           className={activeSection === "menu" ? "active" : ""}

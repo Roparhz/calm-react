@@ -33,7 +33,7 @@ function Traiteur() {
                height="600"
              />
              <source srcSet="img-traiteur/box-1/box1.2.webp" />
-             <img src="img-traiteur/box-1/box1.2.webp" alt="Box apéritive" />
+             <img src="img-traiteur/box-1/box1.2-mini.webp" alt="Box apéritive" />
            </picture>
          ),
          legend: "Box apéritive",
