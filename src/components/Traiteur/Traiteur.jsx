@@ -201,6 +201,8 @@ function Traiteur() {
       <h2 className="h2-box">
         Nouveau votre restaurant CALM vous propose 2 box apéritives !
       </h2>
+      <p className="title-box">50 pièces (10 chacunes)<br></br>
+        Tarif : 60€ la box !</p>
       <p className="title-box">Box n°1</p>
       <div className="carousel-wrapper">
         <div className="carousel">

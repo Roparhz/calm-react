@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes, faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./SideNav.css"
 
 function SideNav() {
@@ -80,6 +80,16 @@ function SideNav() {
         >
           Offre du moment
         </a> */}
+        <a
+          href="#st-valentin"
+          onClick={toggleNav}
+          className={activeSection === "stValentin" ? "active" : ""}
+        >
+          <FontAwesomeIcon
+            icon={faHeart}
+            style={{ color: "#f40101" }}
+          />
+        </a>
         <a
           href="#traiteur"
           onClick={toggleNav}
